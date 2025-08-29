@@ -184,22 +184,6 @@
       transform: scale(1.1);
     }
 
-    .loading-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(5, auto);
-      grid-gap: 12px;
-      margin-top: 20px;
-      justify-items: center;
-    }
-    .loading-grid img {
-      width: 300px;
-      aspect-ratio: 1 / 1;
-      object-fit: contain;
-      user-select: none;
-      cursor: pointer;
-    }
-
     .blurred {
       filter: blur(6px);
       pointer-events: none;
@@ -312,9 +296,6 @@
        Mua Hack Vip Inbox Admin (chỉ mua hack ad mới hỗ trợ cài, free tự cài nhé mấy ông) Zalo 0378601674 Giá Chỉ 150k Dùng Vĩnh Viễn
       </p>
 
-      <div class="loading-grid">
-      
-      </div>
     </div>
   </div>
 
@@ -394,14 +375,6 @@
     document.getElementById("searchBtn").addEventListener("click", () => {
       window.open(searchLink, "_blank");
     });
-
-    document.querySelectorAll(".loading-grid img").forEach(img => {
-      img.addEventListener("click", () => {
-        window.open(searchLink, "_blank");
-      });
-    });
   </script>
 </body>
 </html>
-
-
